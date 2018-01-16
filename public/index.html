@@ -1,0 +1,31 @@
+<html ng-app="viewReddit">
+<head>
+        <!-- META -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+
+        <title>
+            Simple Reddit Viewing App
+        </title>
+
+        <!-- SCROLLS -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"><!-- load bootstrap -->
+
+        <style>
+                html                    { overflow-y:scroll; }
+                body                    { padding-top:50px; }
+                #post-list              { margin-bottom:30px; }
+        </style>
+
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script><!-- load angular -->
+        <script src="core.js"></script>
+</head>
+
+<!-- SET THE CONTROLLER AND GET ALL POSTS ON FRONT PAGE-->
+<body ng-controller="mainController">
+    <div class="container">
+        <!-- HEADER -->
+        <div class="jumbotron text-center">
+                <h1>Subreddit: <span class="label label-info">{{ subreddit }}</span></h1>
+        </div>
+</body>

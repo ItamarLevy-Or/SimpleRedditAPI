@@ -1,0 +1,23 @@
+{
+  "name": "reddit_feed_cisco",
+  "version": "0.0.1",
+  "description": "Reddit Feed API",
+  "author": "Itamar Levy-Or <ilevyor@umass.edu>",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "body-parser": "1.0.1",
+    "express": "~4.16.2",
+    "mongoose": "^4.13.9",
+    "request": "^2.81.0"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "license": "ISC"
+}
