@@ -68,7 +68,7 @@ http://labs.omniti.com/labs/jsend
 
 if the request is succesful the data should look like this
 
-'''
+```
 {
     status: success,
     data: {
@@ -88,7 +88,7 @@ if the request is succesful the data should look like this
         
     }
 }
-'''
+```
 
 if an invalid is provided the message will look like the following:
 
