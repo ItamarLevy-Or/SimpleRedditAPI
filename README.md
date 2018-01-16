@@ -92,18 +92,22 @@ if the request is succesful the data should look like this
 
 if an invalid is provided the message will look like the following:
 
+```
 {
     "status": "fail",
     "message": "provided invalid limit, limit must be a natural between 1 and 25."
 }
+```
 
 and if the reddit API fails for whatever reason the following message will be received
 
+```
 {
     "status": "error",
     "message": "ERROR, view error property for detais",
     "error": [status number from reddit]
 }
+```
 
 I have not done much web development before this. When working on group projects
 in the past I usually worked on the modal and not with the webapp. This project was
