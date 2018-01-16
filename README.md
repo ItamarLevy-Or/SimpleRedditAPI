@@ -90,7 +90,7 @@ if the request is succesful the data should look like this
 }
 ```
 
-if an invalid is provided the message will look like the following:
+if an invalid number is provided the message will look like the following:
 
 ```
 {
@@ -110,13 +110,13 @@ and if the reddit API fails for whatever reason the following message will be re
 ```
 
 I have not done much web development before this. When working on group projects
-in the past I usually worked on the modal and not with the webapp. This project was
+in the past I usually worked on the model and not with the webapp. This project was
 very informative and taught me alot about how a web API works. I used the https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4 tutorial
 as a jumping off point.
 
 Note that to my knowledge the
 https://scotch.io/tutorials/creating-a-single-page-todo-app-with-node-and-angular
-tutorial is no longer correct. I beleive the problem stems with how Express 
-interacts with Angular. It is also possilbe however that I did not correctly follow
+tutorial is no longer correct. I beleive the problem stems from how Express 
+interacts with Angular. It is also possilbe that I did not correctly follow
 the afformentioned tutorial. If the tutorial is indead broken I am sure it could
 be fixed with a little more fiddling than what I attempted.
