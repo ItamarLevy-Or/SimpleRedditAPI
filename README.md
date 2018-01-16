@@ -17,7 +17,7 @@ the client side of http requests sent to reddit.
 
 the express framework is fantastic as it does almost all of the work for you, removing
 the need for alot of boilerplate code. I chose to use the axios library because it was
-very easy to, and from what I read allows for good scaling through its use of promises.
+very easy to use, and from what I read allows for good scaling through its use of promises.
 That said there are many options that would have worked similarly to axios for the purpose
 of this application.
 
@@ -40,20 +40,24 @@ users, so I wrote a function to extract only the information I deamed relevant f
 response object I sent it back to the user as json.
 
 USAGE:
+
 The api accepts the following requests:
 
-GET <url>/api/reddit
+GET [url]/api/reddit
 returns the top 25 posts on the front page of reddit
 
-GET <url>/api/reddit/<subreddit>
-GET <url>/api/reddit/r/<subreddit>
+GET [url]/api/reddit/[subreddit]
+GET [url]/api/reddit/r/[subreddit]
 get the top 25 posts on the specified subreddit
 
 additionally the numbers 1-25 can be added to the
 end of any request so that only the top n posts will
 be shown
+
 e.g.
-GET <url>/api/reddit/10
+
+GET [url]/api/reddit/10
+
 will only return the top 10 posts on reddit.
 I chose not to allow more than 25 posts since that 
 would require checking the next page of reddit.
@@ -91,18 +95,20 @@ if an invalid is provided the message will look like the following:
     "message": "provided invalid limit, limit must be a natural between 1 and 25."
 }
 
-and if the reddit API fails for what ever reason the followin message will be received
+and if the reddit API fails for whatever reason the following message will be received
 
 {
     "status": "error",
     "message": "ERROR, view error property for detais",
-    "error": <status number from reddit>
+    "error": [status number from reddit]
 }
 
-I have not done much webdevelopment before this. When working with on group projects
+I have not done much web development before this. When working on group projects
 in the past I usually worked on the modal and not with the webapp. This project was
 very informative and taught me alot about how a web API works. I used the https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4 tutorial
-as a jumping off point. Note that to my knowledge the
+as a jumping off point.
+
+Note that to my knowledge the
 https://scotch.io/tutorials/creating-a-single-page-todo-app-with-node-and-angular
 tutorial is no longer correct. I beleive the problem stems with how Express 
 interacts with Angular. It is also possilbe however that I did not correctly follow
