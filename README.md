@@ -66,8 +66,9 @@ json format:
 I formated the json according to the jsend convention:
 http://labs.omniti.com/labs/jsend
 
-if the request is succesful the data should be look like this
+if the request is succesful the data should look like this
 
+'''
 {
     status: success,
     data: {
@@ -87,6 +88,7 @@ if the request is succesful the data should be look like this
         
     }
 }
+'''
 
 if an invalid is provided the message will look like the following:
 
