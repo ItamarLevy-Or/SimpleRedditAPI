@@ -1,6 +1,10 @@
 # SimpleRedditAPI
 This is a simple RESTFUL reddit api.
 
+The deployed application can be found here:
+
+https://polar-stream-59333.herokuapp.com
+
 you can locally deploy the project by typing either
 
 "node server.js"
